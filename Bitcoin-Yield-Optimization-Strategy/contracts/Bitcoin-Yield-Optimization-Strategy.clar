@@ -505,3 +505,16 @@
     (ok true)
   )
 )
+
+;; User Notifications
+(define-map user-notifications
+  {
+    user: principal,
+    notification-id: uint
+  }
+  {
+    message: (string-ascii 200),
+    is-read: bool,
+    created-at: uint
+  }
+)
